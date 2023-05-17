@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 9rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: white;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  z-index: 999;
+}
+
+header.scrolled {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  color: #fff;
+}
+
+.navbar-menu li {
+  margin-left: 20px;
+}
+
+.navbar-menu li a {
+  color: #333;
+  text-decoration: none;
+  color: #fff;
+}
+.navbar-menu li a:hover {
+  color: #0056b3;;
+  border-bottom: 1px solid #0056b3;;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  gap: 2rem;
+}
+
+.social-icons a {
+  font-size: 20px;
+  margin-left: 10px;
+  text-decoration: none;
+  margin-right: 10px;
+  color: #ffffff
+  
+}
+
+#twitter:hover {
+  color: #007bff;
+}
+#instagram:hover {
+  color: #c759f3;
+}
+#whatsapp:hover {
+  color: #16be57;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#section1, #section3, #section5{
+  background-color: #9dc0e6;
+}
+#section1{
+  background-image: url(img/pexels-adrien-olichon-6395415.jpg);
+  /*opacity: 0.7;*/
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#section1 aside{
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+#section1 aside img{
+  width: 700px;
+  height: 850px;
+  margin-bottom: -76px;
+  box-sizing: border-box;
+}
+#img-perfil img{
+  margin-left:-250px ;
+}
+#text-perfil{
+  color: #fff;
+  
+}
+#text-perfil h2{
+  color: #0056b3;
+  font-size: 50pt;
+}
+#text-perfil p{
+  font-size: 20pt;
+}
+section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #f8f8f8;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar-menu {
+    margin-top: 20px;
+  }
+
+  .navbar-menu li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .social-icons {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  section h2 {
+    font-size: 24px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <title>Seu Nome - Portfólio</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand">BG</a>
+        </div>
+        <ul class="navbar-menu">
+          <li><a href="#section1">Home</a></li>
+          <li><a href="#section2">Sobre</a></li>
+          <li><a href="#section3">Trabalhos</a></li>
+          <li><a href="#section4">Portfólio</a></li>
+          <li><a href="#section5">Contato</a></li>
+        </ul>
+        <div class="social-icons">
+          <a id="instagram" href="https://www.instagram.com/" ><i class="fab fa-instagram"></i></a>
+          <a id="twitter" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+          <a id="whatsapp" href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="section1">
+    <aside id="img-perfil">
+      <img src="img/1-perfil.png" alt="perfil">
+    </aside>
+    <aside id="text-perfil">
+      <h2>Bruno Gabriel</h2>
+      <p>Make the world a batter place.</p>
+    </aside>
+  </section>
+
+  <section id="section2">
+    <h2>Sobre</h2>
+  </section>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Obcaecati ut saepe in rem debitis iste, officiis magni, 
+    possimus delectus magnam beatae soluta perspiciatis 
+    tempore praesentium quae ab, dolorem repellat est!</p>
+  <section id="section3">
+    <h2>Trabalhos</h2>
+  </section>
+
+  <section id="section4">
+    <h2>Portfólio</h2>
+  </section>
+
+  <section id="section5">
+    <h2>Contato</h2>
+  </section>
+
+  <footer>
+    <div class="container">
+      <form action="enviar_email.php" method="POST" class="contact-form">
+        <h2>Entre em contato comigo</h2>
+        <input type="text" name="name" placeholder="Nome" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </footer>
+  <footer>Todos os direitos reservados &copy; 2023 </footer>
+</body>
+</html>
+
