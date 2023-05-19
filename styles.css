@@ -146,6 +146,22 @@ section {
   margin-bottom: -76px;
   box-sizing: border-box;
 }
+#section3 {
+ display: block;
+
+}
+.section3-text{
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  gap: 10rem;
+}
+
+.section3-text i{
+  font-size: 60pt;
+
+}
 section h2 {
   font-size: 36px;
   margin-bottom: 20px;
